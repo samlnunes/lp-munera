@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/globalStyle.css" />
-    <title>Sobre - MUNERA</title>
+    <link rel="stylesheet" href="./globalStyle.css" />
+    <title>Sobre</title>
   </head>
 
   <body>
     <header>
       <div class="container-header">
         <a href="index.html">
-          <img src="../img/munera.png" alt="Logo Munera" />
+          <img src="./img/munera.png" alt="Logo Munera" />
         </a>
         <nav>
           <ul>
@@ -32,13 +32,32 @@
         </nav>
         <div class="login">
           <p>Minha conta</p>
-          <button class="circle"><span>SL</span></button>
+          <button class="circle" onclick="openPerfil()"><span>SL</span></button>
         </div>
       </div>
     </header>
 
+    <div class="perfil" id="perfil">
+      <div class="top">
+        <img src="./img/munera2.png" alt="" />
+        <button onclick="closePerfil()"><img src="./img/close-icon.svg" alt="" /></button>
+      </div>
+      <div class="content-perfil">
+        <div class="logo-perfil">
+          <span>SL</span>
+        </div>
+        <p>Olá, Samuel Leite</p>
+        <span>samuelleiten@gmail.com</span>
+        <div class="infos-perfil">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
     <div class="block-sobre">
-      <img src="../img/sobre.png" alt="" />
+      <img src="./img/sobre.png" alt="" />
       <section>
         <h1>A Munera</h1>
         <p>
@@ -66,12 +85,14 @@
         </p>
         <div class="sociais">
           <a href="https://www.instagram.com/munera.invest/" target="_blank"
-            ><img src="../img/logo-instagram.svg" alt=""
+            ><img src="./img/logo-instagram.svg" alt=""
           /></a>
-          <a href="#"><img src="../img/logo-facebook.svg" alt="" /></a>
-          <a href="#"><img src="../img/logo-twitter.svg" alt="" /></a>
+          <a href="#"><img src="./img/logo-facebook.svg" alt="" /></a>
+          <a href="#"><img src="./img/logo-twitter.svg" alt="" /></a>
         </div>
       </section>
     </div>
   </body>
 </html>
+
+<script src="./script.js"></script>

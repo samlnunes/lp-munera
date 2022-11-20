@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/globalStyle.css" />
+    <link rel="stylesheet" href="./globalStyle.css" />
     <title>Ofertas</title>
   </head>
 
@@ -12,7 +12,7 @@
     <header>
       <div class="container-header">
         <a href="index.html">
-          <img src="../img/munera.png" alt="Logo Munera" />
+          <img src="./img/munera.png" alt="Logo Munera" />
         </a>
         <nav>
           <ul>
@@ -32,10 +32,29 @@
         </nav>
         <div class="login">
           <p>Minha conta</p>
-          <button class="circle"><span>SL</span></button>
+          <button class="circle" onclick="openPerfil()"><span>SL</span></button>
         </div>
       </div>
     </header>
+
+    <div class="perfil" id="perfil">
+      <div class="top">
+        <img src="./img/munera2.png" alt="" />
+        <button onclick="closePerfil()"><img src="./img/close-icon.svg" alt="" /></button>
+      </div>
+      <div class="content-perfil">
+        <div class="logo-perfil">
+          <span>SL</span>
+        </div>
+        <p>Olá, Samuel Leite</p>
+        <span>samuelleiten@gmail.com</span>
+        <div class="infos-perfil">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
 
     <div class="companies">
       <section id="header">
@@ -45,15 +64,15 @@
         <div class="row">
           <div class="company">
             <div class="content-logo">
-              <img src="../img/allied.svg" alt="" class="logo" />
+              <img src="./img/allied.svg" alt="" class="logo" />
               <div class="circle-corretora a">
-                <img src="../img/b3.png" alt="" />
+                <img src="./img/b3.png" alt="" />
               </div>
               <div class="circle-corretora b">
-                <img src="../img/xp.png" alt="" />
+                <img src="./img/xp.png" alt="" />
               </div>
               <div class="circle-corretora c">
-                <img src="../img/rico.png" alt="" />
+                <img src="./img/rico.png" alt="" />
               </div>
             </div>
             <article article class="infos">
@@ -68,15 +87,15 @@
           </div>
           <div class="company">
             <div class="content-logo">
-              <img src="../img/codesa.png" alt="" class="logo" />
+              <img src="./img/codesa.png" alt="" class="logo" />
               <div class="circle-corretora a">
-                <img src="../img/b3.png" alt="" />
+                <img src="./img/b3.png" alt="" />
               </div>
               <div class="circle-corretora b">
-                <img src="../img/xp.png" alt="" />
+                <img src="./img/xp.png" alt="" />
               </div>
               <div class="circle-corretora c">
-                <img src="../img/rico.png" alt="" />
+                <img src="./img/rico.png" alt="" />
               </div>
             </div>
             <article article class="infos">
@@ -93,15 +112,15 @@
         <div class="row">
           <div class="company">
             <div class="content-logo">
-              <img src="../img/eletrobras.png" alt="" class="logo" />
+              <img src="./img/eletrobras.png" alt="" class="logo" />
               <div class="circle-corretora a">
-                <img src="../img/b3.png" alt="" />
+                <img src="./img/b3.png" alt="" />
               </div>
               <div class="circle-corretora b">
-                <img src="../img/xp.png" alt="" />
+                <img src="./img/xp.png" alt="" />
               </div>
               <div class="circle-corretora c">
-                <img src="../img/rico.png" alt="" />
+                <img src="./img/rico.png" alt="" />
               </div>
             </div>
             <article article class="infos">
@@ -116,15 +135,15 @@
           </div>
           <div class="company">
             <div class="content-logo">
-              <img src="../img/urca.png" alt="" class="logo" />
+              <img src="./img/urca.png" alt="" class="logo" />
               <div class="circle-corretora a">
-                <img src="../img/b3.png" alt="" />
+                <img src="./img/b3.png" alt="" />
               </div>
               <div class="circle-corretora b">
-                <img src="../img/xp.png" alt="" />
+                <img src="./img/xp.png" alt="" />
               </div>
               <div class="circle-corretora c">
-                <img src="../img/rico.png" alt="" />
+                <img src="./img/rico.png" alt="" />
               </div>
             </div>
             <article article class="infos">
@@ -141,15 +160,15 @@
         <div class="row">
           <div class="company">
             <div class="content-logo">
-              <img src="../img/viver.png" alt="" class="logo" />
+              <img src="./img/viver.png" alt="" class="logo" />
               <div class="circle-corretora a">
-                <img src="../img/b3.png" alt="" />
+                <img src="./img/b3.png" alt="" />
               </div>
               <div class="circle-corretora b">
-                <img src="../img/xp.png" alt="" />
+                <img src="./img/xp.png" alt="" />
               </div>
               <div class="circle-corretora c">
-                <img src="../img/rico.png" alt="" />
+                <img src="./img/rico.png" alt="" />
               </div>
             </div>
             <article article class="infos">
@@ -164,15 +183,15 @@
           </div>
           <div class="company">
             <div class="content-logo">
-              <img src="../img/facebook.svg" alt="" class="logo" />
+              <img src="./img/facebook.svg" alt="" class="logo" />
               <div class="circle-corretora a">
-                <img src="../img/b3.png" alt="" />
+                <img src="./img/b3.png" alt="" />
               </div>
               <div class="circle-corretora b">
-                <img src="../img/xp.png" alt="" />
+                <img src="./img/xp.png" alt="" />
               </div>
               <div class="circle-corretora c">
-                <img src="../img/rico.png" alt="" />
+                <img src="./img/rico.png" alt="" />
               </div>
             </div>
             <article class="infos">
@@ -190,3 +209,5 @@
     </div>
   </body>
 </html>
+
+<script src="./script.js"></script>
